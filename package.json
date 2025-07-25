@@ -1,0 +1,46 @@
+{
+  "name": "node-json-api-free",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^6.18.0",
+    "mongoose": "^6.13.8",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "node-cron": "^3.0.2",
+    "nodemailer": "^6.7.5",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.13.0",
+    "random-token": "0.0.8",
+    "sequelize": "^6.20.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/node": "^7.18.5",
+    "@babel/plugin-proposal-class-properties": "^7.17.12",
+    "@babel/plugin-proposal-object-rest-spread": "^7.18.0",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/register": "^7.17.7",
+    "nodemon": "^3.1.4",
+    "sequelize-cli": "^6.4.1"
+  },
+  "scripts": {
+    "start:dev": "nodemon --exec babel-node --experimental-specifier-resolution=node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node src/mongo/seedData.js",
+    "clear": "node src/mongo/clearDbs.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
